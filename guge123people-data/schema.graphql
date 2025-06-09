@@ -1,0 +1,39 @@
+type FallbackData @entity(immutable: true) {
+  id: Bytes!
+  sender: Bytes! # address
+  msgValue: BigInt! # uint256
+  Data: Bytes! # bytes
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type GetAllPeopleDataInfo @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  param1: [Bytes!]! # tuple[]
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type GetPeopleDataInfo @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  name: String! # string
+  age: BigInt! # uint256
+  sex: String! # string
+  internal_id: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type receiveData @entity(immutable: true) {
+  id: Bytes!
+  sender: Bytes! # address
+  msgValue: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
