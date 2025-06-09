@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Truffle build artifacts
+build/
+artifacts/
+cache/
+
+# Truffle config backup
+*.log
+*.pid
+
+# dotenv environment files
+.env
+.env.*
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+
+# Mac OS / Windows system files
+.DS_Store
+Thumbs.db
+
+# Coverage reports (if using solidity-coverage)
+coverage/
+
+# Compiled contracts (optional if you don't want them tracked)
+*.json
+
+# Truffle migrations (optional, only keep if needed)
+migrations/.DS_Store
+
+# Hardhat (if you happen to use both)
+typechain/
+out/
