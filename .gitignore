@@ -1,0 +1,345 @@
+# =============================================================================
+# Node.js 依赖和包管理
+# =============================================================================
+
+# 依赖目录
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# 包管理器缓存
+.npm
+.pnpm-store/
+.yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# 包管理器日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# =============================================================================
+# 构建输出和生成文件
+# =============================================================================
+
+# 构建目录
+build/
+dist/
+out/
+*/build/
+*/dist/
+*/out/
+
+# The Graph 生成文件
+generated/
+*/generated/
+abis/
+*/abis/
+
+# 编译输出
+*.tsbuildinfo
+.build/
+
+# =============================================================================
+# 环境变量和配置
+# =============================================================================
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*/.env
+*/.env.local
+
+# 配置文件中的敏感信息
+config/local.json
+config/production.json
+secrets.json
+
+# =============================================================================
+# 日志文件
+# =============================================================================
+
+# 各种日志文件
+*.log
+logs/
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# 运行时日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# =============================================================================
+# 缓存和临时文件
+# =============================================================================
+
+# 各种缓存目录
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+
+# 临时文件
+.tmp/
+temp/
+*.tmp
+*.temp
+
+# =============================================================================
+# 测试相关
+# =============================================================================
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+.coverage/
+*.lcov
+
+# Jest
+.jest/
+
+# =============================================================================
+# IDE 和编辑器
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# WebStorm/IntelliJ
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# 操作系统生成文件
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# 区块链和 Web3 相关
+# =============================================================================
+
+# Truffle
+build/contracts/
+.truffle/
+
+# Hardhat
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# The Graph
+*/build/
+*/generated/
+.graph/
+
+# Blockchain data
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Private keys (重要!)
+*.pem
+*.key
+*.p12
+*.pfx
+private-key.*
+mnemonic.*
+seed.*
+
+# =============================================================================
+# 前端框架相关
+# =============================================================================
+
+# React
+.eslintcache
+
+# Next.js
+.next/
+out/
+
+# Gatsby
+.cache/
+public/
+
+# Vue.js
+.vuepress/dist
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Storybook
+.out/
+.storybook-out/
+
+# =============================================================================
+# 数据库和数据文件
+# =============================================================================
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# 数据文件
+*.csv
+*.json.backup
+*.xml.backup
+data/
+dumps/
+
+# =============================================================================
+# Docker 相关
+# =============================================================================
+
+# Docker Compose 覆盖文件
+docker-compose.override.yml
+docker-compose.*.yml
+!docker-compose.yml
+!docker-compose.prod.yml
+
+# =============================================================================
+# 性能和监控
+# =============================================================================
+
+# Chrome DevTools
+.devtools/
+
+# 性能分析
+*.cpuprofile
+*.heapsnapshot
+
+# =============================================================================
+# 其他工具
+# =============================================================================
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# TypeScript
+*.tsbuildinfo
+
+# Rollup
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# Microbundle
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# =============================================================================
+# 项目特定忽略
+# =============================================================================
+
+# 如果你有特定的文件或目录需要忽略，在这里添加
+# 例如：
+# my-secret-file.txt
+# temp-data/
